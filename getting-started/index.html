@@ -1,0 +1,787 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://docs.anovos.ai/getting-started/">
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
+    
+    
+      
+        <title>Getting Started - Anovos Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.db9e7362.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+  
+
+
+
+  
+  
+
+
+
+  <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-52258647-20","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#steps-to-install-anovos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<header id="site-header">
+  <!-- Button to open drawer -->
+  <nav id="nav-main" class="nav">
+    <div class="md-grid nav-grid-container">
+      <section class="md-grid grid-x row align-right nav-grid-section">
+        <a aria-current="page" class="logo" href="https://docs.anovos.io/">
+          <img src="/assets/anovos-logo.svg" alt="Anovos Logo">
+        </a>
+				<ul class="nav-items">
+					<li class="">
+						<a href="/docs/getting-started/index.md">Get Started</a>
+					</li>
+					<li class="active">
+						<a href="/">Docs</a>
+					</li>
+					<li class="">
+						<a href="https://">Tutorials</a>
+					</li>
+					<li class="last-nav-item">
+						<a href="community/contributing//">Community</a>
+					</li>
+				</ul>
+				<ul class="social-icons">
+					<li class="pre">
+						<a href="https://github.com/anovos/">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+					<li class="pre">
+						<a href="https://twitter.com/anovos/">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li class="pre">
+						<a href="https://go.mlops.community/slack">
+							<i class="fa fa-slack"></i>
+						</a>
+					</li>
+					<li class="pre">
+						<a href="https://www.youtube.com">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+					</li>
+				</ul>
+      </section>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+    <!-- Site title -->
+    <label class="md-nav__title" for="__drawer">
+        <a href="https://docs.anovos.ai/" title="Anovos Docs" class="md-nav__button md-logo" aria-label="Anovos Docs">
+        </a>
+        Anovos Docs
+    </label>
+    <!-- Repository containing source -->
+    
+    <!-- Render item list -->
+    <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+        
+        
+        
+        
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+        
+        
+        
+        
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Getting Started
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-via-public-registry" class="md-nav__link">
+    Installation via public registry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-via-git" class="md-nav__link">
+    Installation via Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-started" class="md-nav__link">
+    Get Started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-run-anovos-using-spark-submit" class="md-nav__link">
+    Steps to Run ANOVOS using spark-submit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-running-via-users-local-environment" class="md-nav__link">
+    A. Running via User's local environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-running-via-dockers" class="md-nav__link">
+    B. Running via Dockers
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+        
+        
+        
+        
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="nav-4">
+          Community
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Community" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          Community
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community/contributing/" class="md-nav__link">
+        Contributing to Anovos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community/code-of-conduct/" class="md-nav__link">
+        Code of Conduct
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community/communication/" class="md-nav__link">
+        Communication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community/license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+        
+        
+        
+        
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="nav-5">
+          In-Depth Docs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="In-Depth Docs" data-md-level="1">
+        <label class="md-nav__title" for="nav-5">
+          <span class="md-nav__icon md-icon"></span>
+          In-Depth Docs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/anovos-intro/" class="md-nav__link">
+        Anovos Intro
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/anovos-roadmap/" class="md-nav__link">
+        Anovos Product Roadmap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/anovos-potential-workflow/" class="md-nav__link">
+        Anovos Potential Workflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5_4" type="checkbox" id="nav-5_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="nav-5_4">
+          Anovos Modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Anovos Modules" data-md-level="2">
+        <label class="md-nav__title" for="nav-5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Anovos Modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/anovos-modules-overview/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/anovos-modules-overview/data-ingest/" class="md-nav__link">
+        Data Ingest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/anovos-modules-overview/data-analyzer/" class="md-nav__link">
+        Data Analyzer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/anovos-modules-overview/quality-checker/" class="md-nav__link">
+        Quality Checker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docs/anovos-modules-overview/association-evaluator/" class="md-nav__link">
+        Association Evaluator
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+        
+    </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-via-public-registry" class="md-nav__link">
+    Installation via public registry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-via-git" class="md-nav__link">
+    Installation via Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-started" class="md-nav__link">
+    Get Started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-run-anovos-using-spark-submit" class="md-nav__link">
+    Steps to Run ANOVOS using spark-submit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-running-via-users-local-environment" class="md-nav__link">
+    A. Running via User's local environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-running-via-dockers" class="md-nav__link">
+    B. Running via Dockers
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="steps-to-install-anovos">Steps to Install ANOVOS</h1>
+<h2 id="installation-via-public-registry">Installation via public registry</h2>
+<p>To install ANOVOS package via pypi, please execute the following commands:  </p>
+<p><code>pip3 install anovos</code></p>
+<h2 id="installation-via-git">Installation via Git</h2>
+<p>To install ANOVOS package via git, please execute the following commands:  </p>
+<p><code>pip3 install "git+https://github.com/anovos/anovos.git"</code></p>
+<h2 id="get-started">Get Started</h2>
+<p>Once installed, packages can be imported and the required functionality can be called in the user flow in any application or notebook. <br/>
+Refer to the following links to get started :</p>
+<ul>
+<li>quick-start guide</li>
+<li><a href="https://github.com/anovos/anovos/tree/main/notebooks">example notebooks</a></li>
+<li><a href="https://docs.anovos.ai">documentation</a></li>
+</ul>
+<h2 id="steps-to-run-anovos-using-spark-submit">Steps to Run ANOVOS using spark-submit</h2>
+<p>After checking out via Git clone, please follow the below instructions to run the E2E ML Anovos Package on the sample income dataset: </p>
+<ol>
+<li>
+<p>First execute the following command to clean folder, build the latest modules: </p>
+<p><code>make clean build</code></p>
+</li>
+<li>
+<p>There are 2 ways to run using spark-submit after this:</p>
+</li>
+<li>
+<p>Follow A, if you have a working environment already and would just like to use the same configs. (Note: version dependencies are to be ensured by user)</p>
+</li>
+<li>Follow B, if you want to run via dockers</li>
+</ol>
+<h2 id="a-running-via-users-local-environment">A. Running via User's local environment</h2>
+<ol>
+<li>
+<p>Check the pre-requisites - ANOVOS requires Spark (2.4.x), Python (3.7.*), Java(8). Check version using the following commands: </p>
+<p><code>spark-submit --version</code><br/>
+<code>python --version</code><br/>
+<code>java -version</code></p>
+</li>
+<li>
+<p>Set environment variables - <code>$JAVA_HOME</code>, <code>$SPARK_HOME</code>, <code>$PYSPARK_PYTHON</code>, and <code>$PATH</code></p>
+</li>
+<li>Ensure spark-submit and pyspark is working without any issues.</li>
+<li>
+<p>Execute the following commands to run the end to end pipeline: </p>
+<p><code>cd dist/</code><br/>
+<code>nohup ./spark-submit.sh &gt; run.txt &amp;</code></p>
+</li>
+<li>
+<p>Check result of end to end run</p>
+<p><code>tail -f run.txt</code></p>
+</li>
+</ol>
+<h2 id="b-running-via-dockers">B. Running via Dockers</h2>
+<p>Note: Kindly ensure the machine has ~15 GB free space atleast when running using Dockers</p>
+<ol>
+<li>Install docker on your machine (https://docs.docker.com/get-docker/)</li>
+<li>Set docker settings to use atleast 8GB memory and 4+ cores. Below image shows setting docker settings on Docker Desktop:</li>
+</ol>
+<p align="center">
+  <img src="/docker_desktop_settings.png" width="800" title="Docker Desktop Settings">
+</p>
+
+<ol>
+<li>
+<p>Ensure dockers is successfully installed by executing the following commands to check docker image and docker container respectively:
+    <code>docker image ls</code><br>
+    <code>docker ps</code></p>
+</li>
+<li>
+<p>Create docker image with the following command: (Note: Step #1 should have copied a "Dockerfile" to the directory the following command is being executed in)</p>
+<p><code>docker build -t mw_ds_feature_machine:0.1 .</code></p>
+</li>
+<li>
+<p>Check if docker image was successfully created: </p>
+<p><code>docker image ls</code></p>
+</li>
+<li>
+<p>Run the docker container using the following command:</p>
+<p><code>docker run -t -i -v $(PWD):/temp mw_ds_feature_machine:0.1</code></p>
+</li>
+<li>
+<p>Check if docker container is successfully running: </p>
+<p><code>docker ps -a</code></p>
+</li>
+<li>
+<p>To explore the generated output folder, execute the following commands:</p>
+<p><code>docker exec -it &lt;container_id&gt; bash</code></p>
+</li>
+<li>
+<p>Once run has completed please exit the docker run by sending SIGINT - <code>^C</code> (CTRL + C)</p>
+</li>
+</ol>
+<h1 id="running-on-custom-dataset">Running on custom dataset</h1>
+<p>The above E2E ANOVOS package run executed for the sample income dataset can be customized and run for any user dataset. <br>
+This can be done configuring the <code>config/config.yaml</code> file and by defining the flow of run in <code>src/main.py</code> file.</p>
+<h1 id="anovos-package-documentation">ANOVOS Package Documentation</h1>
+<p>Please find the detailed documentation of ANOVOS package here.</p>
+<h1 id="reference-links">Reference Links</h1>
+<ol>
+<li>Setting up pyspark and installing on Windows <br>
+https://towardsdatascience.com/installing-apache-pyspark-on-windows-10-f5f0c506bea1</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <div id="footer-wrapper" class="middle">
+    <div class="container" id="footer-container">
+        <div class="row">
+            <div class="col-12">
+                <nav id="nav-footer">
+                    <ul>
+                        <li><a href="/community/contributor" title="">Contributor Guide</a></li>
+                        <li><a href="/community/license/" title="">License</a></li>
+                        <li><a href="/community/code-of-conduct/" title="">Code of Coduct</a></li>
+                        
+                    </ul>
+                </nav>
+                <p>
+                    © 2021 <a href="https://www.anovos.ai">Anovos</a>. All right reserved
+                </p>
+                <p>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
+      
+    
+  </body>
+</html>
